@@ -5,6 +5,10 @@ import Table from '../../components/Table'
 export default {
   title: 'Common/Table',
   component: Table,
+  parameters: {
+    componentSubtitle:
+      'An abstract table that allows headers and displayed in a numbered list',
+  },
 }
 
 const Template = (args) => <Table {...args} />
