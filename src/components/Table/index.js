@@ -11,7 +11,8 @@ const TableWrapper = styled.div`
 
 /**
 - An abstract table that allows headers and displayed in a numbered list
-**/
+- A change
+* */
 
 const Table = (props) => {
   const { columns, headers, contents, numbered } = props
@@ -36,15 +37,20 @@ Table.propTypes = {
   /**
     Provide the headers of the columns for the table, if provided will display the headers of the columns
    */
-  headers: PropTypes.array,
+  headers: PropTypes.arrayOf(PropTypes.string),
   /**
     Provide the contents of the data to be displayed in the table as an array of objects
    */
-  contents: PropTypes.array.isRequired,
+  contents: PropTypes.arrayOf(PropTypes.string).isRequired,
   /**
     Display the table as a numbered list
    */
   numbered: PropTypes.bool,
+}
+
+Table.defaultProps = {
+  headers: [],
+  numbered: false,
 }
 
 export default Table

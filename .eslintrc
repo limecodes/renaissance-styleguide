@@ -7,5 +7,7 @@
   "parser": "babel-eslint",
   "extends": ["react-app", "airbnb", "prettier"],
   "plugins": ["react", "import"],
-  "rules": {}
+  "rules": {
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }]
+  }
 }
