@@ -17,7 +17,7 @@ const PageWrapper = styled.section`
   height: 100vh;
 `
 
-const Layout = (props) => {
+const Layout = () => {
   return (
     <Container>
       <Sidebar>Sidebar</Sidebar>

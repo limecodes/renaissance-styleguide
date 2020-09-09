@@ -22,7 +22,8 @@ const TableColumns = (props) => {
         ))}
       </>
     )
-  } else if (numbered) {
+  }
+  if (numbered) {
     return (
       <>
         <Column columns={columns + 1}>{number + 1}</Column>
@@ -44,7 +45,7 @@ const TableColumns = (props) => {
 
 TableColumns.propTypes = {
   columns: PropTypes.number.isRequired,
-  items: PropTypes.array.isRequired,
+  items: PropTypes.arrayOf(PropTypes.string).isRequired,
   numbered: PropTypes.bool,
   number: PropTypes.number,
 }

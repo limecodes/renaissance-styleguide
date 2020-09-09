@@ -48,13 +48,13 @@ export const WithHeaders = Template.bind({})
 WithHeaders.args = {
   columns: headers.length,
   contents: patients,
-  headers: headers,
+  headers,
 }
 
 export const Numbered = Template.bind({})
 Numbered.args = {
   columns: headers.length,
   contents: patients,
-  headers: headers,
+  headers,
   numbered: true,
 }

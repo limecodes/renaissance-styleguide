@@ -8,6 +8,9 @@
   "extends": ["react-app", "airbnb", "prettier"],
   "plugins": ["react", "import"],
   "rules": {
-    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
+    "react/no-array-index-key": 0,
+    "react/jsx-props-no-spreading": "warn",
+    "no-else-return": "warn"
   }
 }

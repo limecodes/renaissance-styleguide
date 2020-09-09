@@ -40,11 +40,17 @@ const TableRow = (props) => {
 }
 
 TableRow.propTypes = {
-  items: PropTypes.array.isRequired,
+  items: PropTypes.arrayOf(PropTypes.string).isRequired,
   columns: PropTypes.number.isRequired,
   header: PropTypes.bool,
   numbered: PropTypes.bool,
   number: PropTypes.number,
+}
+
+TableRow.defaultProps = {
+  header: false,
+  numbered: false,
+  number: 0,
 }
 
 export default TableRow

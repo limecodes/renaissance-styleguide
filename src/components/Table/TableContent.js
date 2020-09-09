@@ -1,6 +1,5 @@
 import React from 'react'
 import { PropTypes } from 'prop-types'
-import styled from 'styled-components'
 
 import TableRow from './TableRow'
 
@@ -40,8 +39,8 @@ const TableContent = (props) => {
 
 TableContent.propTypes = {
   columns: PropTypes.number.isRequired,
-  items: PropTypes.array.isRequired,
-  headers: PropTypes.array,
+  items: PropTypes.arrayOf(PropTypes.string).isRequired,
+  headers: PropTypes.arrayOf(PropTypes.string),
   numbered: PropTypes.bool,
 }
 
