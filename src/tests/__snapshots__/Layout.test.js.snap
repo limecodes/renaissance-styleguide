@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Renders Correctly 1`] = `
+<main
+  className="sc-bdnylx fNsnEo"
+>
+  <section
+    className="sc-gtssRu boeFoM"
+  >
+    Sidebar
+  </section>
+  <section
+    className="sc-dlnjPT kmJCoz"
+  >
+    PageWrapper
+  </section>
+</main>
+`;

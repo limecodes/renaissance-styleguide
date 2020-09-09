@@ -7,19 +7,43 @@
   "license": "Private",
   "private": true,
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-essentials": "^6.0.21",
+    "@storybook/addon-links": "^6.0.21",
+    "@storybook/react": "^6.0.21",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
     "husky": "^4.3.0",
+    "jest": "^26.4.2",
     "lint-staged": "^10.3.0",
-    "prettier": "^2.1.1"
+    "prettier": "^2.1.1",
+    "react-is": "^16.13.1",
+    "react-test-renderer": "^16.13.1"
   },
   "scripts": {
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "lint": "eslint src --fix",
+    "test:staged": "yarn jest --findRelatedTests",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "babel": {
     "presets": [
@@ -35,6 +59,11 @@
   "lint-staged": {
     "**/*": [
       "prettier --write --ignore-unknown"
+    ],
+    "./src/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "yarn test:staged"
     ]
   }
 }
