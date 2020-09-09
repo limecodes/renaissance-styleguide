@@ -18,6 +18,7 @@ const TableContent = (props) => {
         />
         {items.map((item, i) => (
           <TableRow
+            key={`table_row_${i}`}
             number={numbered ? i : 0}
             numbered={numbered}
             columns={columns}
@@ -28,8 +29,12 @@ const TableContent = (props) => {
     )
   }
 
-  return items.map((item) => (
-    <TableRow columns={columns} items={Object.values(item)} />
+  return items.map((item, i) => (
+    <TableRow
+      key={`table_row_${i}`}
+      columns={columns}
+      items={Object.values(item)}
+    />
   ))
 }
 
@@ -37,7 +42,7 @@ TableContent.propTypes = {
   columns: PropTypes.number.isRequired,
   items: PropTypes.array.isRequired,
   headers: PropTypes.array,
-  numbered: PropTypes.boolean,
+  numbered: PropTypes.bool,
 }
 
 export default TableContent

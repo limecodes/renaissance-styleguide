@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table Renders Successfully 1`] = `
+<div
+  className="sc-hKFyIo korkGl"
+>
+  <div
+    className="sc-gtssRu kSLPty"
+  >
+    <div
+      className="sc-bdnylx iCXasL"
+    >
+      a
+    </div>
+  </div>
+  <div
+    className="sc-gtssRu kSLPty"
+  >
+    <div
+      className="sc-bdnylx iCXasL"
+    >
+      b
+    </div>
+  </div>
+  <div
+    className="sc-gtssRu kSLPty"
+  >
+    <div
+      className="sc-bdnylx iCXasL"
+    >
+      c
+    </div>
+  </div>
+</div>
+`;

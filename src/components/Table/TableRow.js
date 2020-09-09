@@ -42,8 +42,8 @@ const TableRow = (props) => {
 TableRow.propTypes = {
   items: PropTypes.array.isRequired,
   columns: PropTypes.number.isRequired,
-  header: PropTypes.boolean,
-  numbered: PropTypes.boolean,
+  header: PropTypes.bool,
+  numbered: PropTypes.bool,
   number: PropTypes.number,
 }
 

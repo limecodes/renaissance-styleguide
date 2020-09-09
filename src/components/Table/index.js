@@ -44,7 +44,7 @@ Table.propTypes = {
   /**
     Display the table as a numbered list
    */
-  numbered: PropTypes.boolean,
+  numbered: PropTypes.bool,
 }
 
 export default Table

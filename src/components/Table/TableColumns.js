@@ -15,8 +15,10 @@ const TableColumns = (props) => {
     return (
       <>
         <Column columns={columns + 1}>#</Column>
-        {items.map((column) => (
-          <Column columns={columns + 1}>{column || 'N/A'}</Column>
+        {items.map((column, i) => (
+          <Column key={`table_column_${i}`} columns={columns + 1}>
+            {column || 'N/A'}
+          </Column>
         ))}
       </>
     )
@@ -24,22 +26,26 @@ const TableColumns = (props) => {
     return (
       <>
         <Column columns={columns + 1}>{number + 1}</Column>
-        {items.map((column) => (
-          <Column columns={columns + 1}>{column || 'N/A'}</Column>
+        {items.map((column, i) => (
+          <Column key={`table_column_${i}`} columns={columns + 1}>
+            {column || 'N/A'}
+          </Column>
         ))}
       </>
     )
   }
 
-  return items.map((column) => (
-    <Column columns={columns}>{column || 'N/A'}</Column>
+  return items.map((column, i) => (
+    <Column key={`table_column_${i}`} columns={columns}>
+      {column || 'N/A'}
+    </Column>
   ))
 }
 
 TableColumns.propTypes = {
   columns: PropTypes.number.isRequired,
   items: PropTypes.array.isRequired,
-  numbered: PropTypes.boolean,
+  numbered: PropTypes.bool,
   number: PropTypes.number,
 }
 
