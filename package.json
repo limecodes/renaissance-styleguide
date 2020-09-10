@@ -46,6 +46,7 @@
     "format": "prettier . --write",
     "lint": "eslint src --fix",
     "test:staged": "yarn jest --findRelatedTests",
+    "test:updateSnapshot": "jest --updateSnapshot",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

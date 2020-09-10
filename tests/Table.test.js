@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import Table from '../components/Table'
+import Table from '../src/components/Table'
 
 let container
 

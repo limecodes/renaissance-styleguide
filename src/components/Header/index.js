@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const HeaderWrapper = styled.div`
   width: 100%;
@@ -8,4 +9,8 @@ const HeaderWrapper = styled.div`
   background-color: #fff;
 `
 
-export default () => <HeaderWrapper>Header</HeaderWrapper>
+export default () => (
+  <HeaderWrapper>
+    <FontAwesomeIcon icon="bars" />
+  </HeaderWrapper>
+)
