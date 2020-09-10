@@ -5,6 +5,9 @@ import Header from '../../components/Header'
 export default {
   title: 'Layout/Header',
   component: 'Header',
+  parameters: {
+    layout: 'fullscreen',
+  },
 }
 
 const Template = (args) => <Header {...args} />

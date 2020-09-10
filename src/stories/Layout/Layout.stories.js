@@ -5,6 +5,9 @@ import Layout from '../../components/Layout'
 export default {
   title: 'Layout/Main',
   component: Layout,
+  parameters: {
+    layout: 'fullscreen',
+  },
 }
 
 const Template = (args) => <Layout {...args} />

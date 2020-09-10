@@ -1,6 +1,7 @@
 import { createGlobalStyle, css } from 'styled-components'
 
 export const bodyStyles = css`
+  font-family: sans-serif;
   margin: 0;
   background-color: #f3f6f9;
   -webkit-text-size-adjust: 100%;

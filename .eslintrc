@@ -11,6 +11,7 @@
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
     "react/no-array-index-key": 0,
     "react/jsx-props-no-spreading": "warn",
-    "no-else-return": "warn"
+    "no-else-return": "warn",
+    "jsx-a11y/anchor-is-valid": "warn"
   }
 }

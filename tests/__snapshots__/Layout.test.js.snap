@@ -2,17 +2,67 @@
 
 exports[`Layout Renders Correctly 1`] = `
 <main
-  className="sc-bdnylx fNsnEo"
+  className="sc-eCApGN hCdAiT"
 >
   <section
-    className="sc-gtssRu boeFoM"
+    className="sc-jSFkmK HEuru"
   >
     Sidebar
   </section>
   <section
-    className="sc-dlnjPT kmJCoz"
+    className="sc-gKAblj hdXKdX"
   >
-    PageWrapper
+    <div
+      className="sc-bdnylx zjKUZ"
+    >
+      <ul
+        className="sc-gtssRu hoQdqF"
+      >
+        <li
+          className="sc-dlnjPT jKgXLC"
+        >
+          <button
+            className="sc-hKFyIo jaBECl"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-bars fa-w-14 "
+              data-icon="bars"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </li>
+        <li
+          className="sc-dlnjPT jKgXLC"
+        >
+          <a
+            href="/home"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          className="sc-dlnjPT jKgXLC"
+        >
+          <a
+            href="/patients"
+          >
+            Patients
+          </a>
+        </li>
+      </ul>
+    </div>
   </section>
 </main>
 `;
