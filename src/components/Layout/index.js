@@ -3,15 +3,10 @@ import styled from 'styled-components'
 import { PropTypes } from 'prop-types'
 
 import Header from '../Header'
+import Sidebar from '../Sidebar'
 
 const Container = styled.main`
   display: flex;
-`
-
-const Sidebar = styled.section`
-  background-color: red;
-  width: 250px;
-  height: 100vh;
 `
 
 const PageWrapper = styled.section`
@@ -25,7 +20,7 @@ const Layout = (props) => {
 
   return (
     <Container>
-      <Sidebar>Sidebar</Sidebar>
+      <Sidebar />
       <PageWrapper>{withHeader && <Header />}</PageWrapper>
     </Container>
   )

@@ -2,18 +2,18 @@
 
 exports[`Layout Renders Correctly 1`] = `
 <main
-  className="sc-eCApGN hCdAiT"
+  className="sc-gKAblj fvRAFo"
 >
   <section
-    className="sc-jSFkmK HEuru"
+    className="sc-jSFkmK ljJbPe"
   >
     Sidebar
   </section>
   <section
-    className="sc-gKAblj hdXKdX"
+    className="sc-iCoHVE ismwmQ"
   >
     <div
-      className="sc-bdnylx zjKUZ"
+      className="sc-bdnylx gunsZc"
     >
       <ul
         className="sc-gtssRu hoQdqF"
@@ -22,7 +22,7 @@ exports[`Layout Renders Correctly 1`] = `
           className="sc-dlnjPT jKgXLC"
         >
           <button
-            className="sc-hKFyIo jaBECl"
+            className="sc-eCApGN dPGIcb"
           >
             <svg
               aria-hidden="true"
@@ -47,6 +47,7 @@ exports[`Layout Renders Correctly 1`] = `
           className="sc-dlnjPT jKgXLC"
         >
           <a
+            className="sc-hKFyIo gVPA-dU"
             href="/home"
           >
             Home
@@ -56,6 +57,7 @@ exports[`Layout Renders Correctly 1`] = `
           className="sc-dlnjPT jKgXLC"
         >
           <a
+            className="sc-hKFyIo gVPA-dU"
             href="/patients"
           >
             Patients

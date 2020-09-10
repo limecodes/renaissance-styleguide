@@ -2,7 +2,7 @@
 
 exports[`Renders Correctly 1`] = `
 <div
-  className="sc-bdnylx zjKUZ"
+  className="sc-bdnylx gunsZc"
 >
   <ul
     className="sc-gtssRu hoQdqF"
@@ -11,7 +11,7 @@ exports[`Renders Correctly 1`] = `
       className="sc-dlnjPT jKgXLC"
     >
       <button
-        className="sc-hKFyIo jaBECl"
+        className="sc-eCApGN dPGIcb"
       >
         <svg
           aria-hidden="true"
@@ -36,6 +36,7 @@ exports[`Renders Correctly 1`] = `
       className="sc-dlnjPT jKgXLC"
     >
       <a
+        className="sc-hKFyIo gVPA-dU"
         href="/home"
       >
         Home
@@ -45,6 +46,7 @@ exports[`Renders Correctly 1`] = `
       className="sc-dlnjPT jKgXLC"
     >
       <a
+        className="sc-hKFyIo gVPA-dU"
         href="/patients"
       >
         Patients
